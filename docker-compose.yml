@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mypythonapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+      # volumes:
+      # - .: # 将本地目录 './local/path' 挂载到容器的 '/app' 目录
